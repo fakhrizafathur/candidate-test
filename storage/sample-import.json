@@ -1,0 +1,48 @@
+{
+  "supplier": {
+    "id": 1,
+    "name": "Test Supplier Import"
+  },
+  "layups": [
+    {
+      "name": "Premium Layup",
+      "layers": [
+        {
+          "layer_order": 1,
+          "thickness": 15.5,
+          "width": 120.0,
+          "angle": 0
+        },
+        {
+          "layer_order": 2,
+          "thickness": 14.0,
+          "width": 120.0,
+          "angle": 45
+        },
+        {
+          "layer_order": 3,
+          "thickness": 15.5,
+          "width": 120.0,
+          "angle": 90
+        }
+      ]
+    },
+    {
+      "name": "Standard Layup",
+      "layers": [
+        {
+          "layer_order": 1,
+          "thickness": 10.5,
+          "width": 100.0,
+          "angle": 0
+        },
+        {
+          "layer_order": 2,
+          "thickness": 12.0,
+          "width": 100.0,
+          "angle": 90
+        }
+      ]
+    }
+  ]
+}

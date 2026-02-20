@@ -1,0 +1,6 @@
+supplier_id,supplier_name,layup_id,layup_name,layer_id,layer_order,thickness,width,angle
+1,Supplier A,1,Standard Layup,1,1,10.5,100,0
+1,Supplier A,1,Standard Layup,2,2,12.0,100,45
+1,Supplier A,1,Standard Layup,3,3,10.5,100,90
+1,Supplier A,2,Premium Layup,4,1,15.5,120,0
+1,Supplier A,2,Premium Layup,5,2,14.0,120,45
