@@ -11,11 +11,13 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-COPY composer.json ./
-RUN composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
-
+# COPY SEMUA SOURCE DULU
 COPY . .
 
+# BARU INSTALL DEPENDENCY
+RUN composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
+
+# Build frontend
 RUN if [ -f package.json ]; then npm install && npm run build; fi
 
 ENV PORT=8080
