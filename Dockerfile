@@ -18,7 +18,7 @@ COPY . .
 RUN composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
 
 # Build frontend
-RUN if [ -f package.json ]; then npm install && npm run build; fi
+RUN npm install && npm run build
 
 ENV PORT=8080
 EXPOSE 8080
