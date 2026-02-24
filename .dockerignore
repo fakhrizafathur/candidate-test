@@ -1,0 +1,13 @@
+vendor
+node_modules
+.git
+.env
+.env.*
+storage/*.key
+.vscode
+tests
+.github
+Dockerfile
+.dockerignore
+npm-debug.log
+composer.lock
