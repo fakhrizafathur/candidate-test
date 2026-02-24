@@ -19,7 +19,7 @@ WORKDIR /var/www/html
 
 # Copy composer files and install PHP dependencies
 COPY composer.json composer.lock* ./
-RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader || true
+RUN composer install --prefer-dist --no-interaction --no-progress --optimize-autoloader
 
 # Copy node package files and build assets
 COPY package*.json ./
@@ -40,4 +40,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Use artisan serve so container listens on the provided PORT
-CMD ["sh", "-c", "php artisan key:generate --ansi || true; php artisan config:cache || true; php artisan serve --host=0.0.0.0 --port=${PORT}"]
+CMD ["sh", "-c", "php artisan config:cache || true; php artisan serve --host=0.0.0.0 --port=${PORT}"]
